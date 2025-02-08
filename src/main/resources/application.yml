@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: travelApp
+  security:
+    user:
+      name: "user"    # Username for Spring Security
+      password: "user" # Password for Spring Security
+
+development:
+  apiKey: "M21wbzZlNHhRYWdDQldERkdRRjVYZktxMGpQMFJLUmRRTm16TXJIRA=="
+  externalApi:
+    ##country
+    getCountry: "https://api.countrystatecity.in/v1/countries/"
+    getRegionsAndProvince: "https://api.countrystatecity.in/v1/states"
+    getCountries: "https://api.countrystatecity.in/v1/countries"
+    getIsoCodes: "https://countriesnow.space/api/v0.1/countries/iso"
+    #city
+    getCity: "https://api.countrystatecity.in/v1/countries/{cityId}/cities"
