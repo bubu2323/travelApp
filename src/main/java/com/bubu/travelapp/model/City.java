@@ -6,6 +6,6 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class City {
-    String id;
-    String name;
+    private String id;
+    private String name;
 }

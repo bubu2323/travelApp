@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Getter
 @Setter
 public class ExternalApi {
-    String getCountry;
-    String getRegionsAndProvince;
-    String getCountries;
-    String getCity;
-    String getIsoCodes;
+    private String getCountry;
+    private String getRegionsAndProvince;
+    private String getCountries;
+    private String getCity;
+    private String getIsoCodes;
 }

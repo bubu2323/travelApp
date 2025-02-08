@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Getter
 @Setter
 public class ApplicationProperties {
-    public String apiKey;
-    public String secrets;
-    public ExternalApi externalApi;
+    private String apiKey;
+    private String secrets;
+    private ExternalApi externalApi;
 
 
 
