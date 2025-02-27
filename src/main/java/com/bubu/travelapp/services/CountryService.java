@@ -1,9 +1,6 @@
 package com.bubu.travelapp.services;
 
-import com.bubu.travelapp.model.Country;
-import com.bubu.travelapp.model.CountryDetails;
-import com.bubu.travelapp.model.IsoCode;
-import com.bubu.travelapp.model.RegionsAndProvinces;
+import com.bubu.travelapp.model.*;
 
 import java.io.IOException;
 import java.util.List;

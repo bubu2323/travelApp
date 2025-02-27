@@ -16,7 +16,7 @@ class ApplicationPropertiesTests {
 
     @Test
     void test_givenProperties_whenGetProperties_thenMatchResult() {
-    assertEquals(applicationProperties.getExternalApi().getGetCountry(), "https://api.countrystatecity.in/v1/countries/IN");
+    assertEquals(applicationProperties.getExternalApi().getGetCountry(), "https://api.countrystatecity.in/v1/countries/");
     }
 
 }

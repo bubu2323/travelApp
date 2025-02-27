@@ -11,29 +11,8 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 public class ApplicationProperties {
     private String apiKey;
+    private String geoApiKey;
     private String secrets;
     private ExternalApi externalApi;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

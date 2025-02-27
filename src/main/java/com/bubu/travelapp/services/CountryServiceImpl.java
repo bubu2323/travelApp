@@ -49,7 +49,7 @@ public class CountryServiceImpl implements CountryService {
 
     @Override
     public List<Country> getAllCountries() throws IOException, InterruptedException {
-        String response = this.httpRequestBuilder(applicationProperties.getExternalApi().getGetRegionsAndProvince(), true);
+        String response = this.httpRequestBuilder(applicationProperties.getExternalApi().getGetCountries(), true);
         List<Country> countries = Arrays.asList(objectMapper.readValue(response, Country[].class));
 
         if (countries.isEmpty()) {
@@ -70,7 +70,7 @@ public class CountryServiceImpl implements CountryService {
         HttpRequest.Builder requestBuilder = HttpRequest.newBuilder().uri(URI.create(endpoint));
 
         if (isHeaderRequired) {
-            requestBuilder.header("X-CSCAPI-KEY", applicationProperties.getApiKey());
+            requestBuilder.header("X-CSCAPI-KEY", applicationProperties.getExternalApi().toString());
         }
         HttpRequest request = requestBuilder.build();
 

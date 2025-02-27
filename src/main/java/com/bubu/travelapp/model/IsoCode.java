@@ -19,10 +19,8 @@ public class IsoCode {
     @Accessors(chain = true)
     public static class Infos {
         private String name;
-
         @JsonProperty("Iso2")
         private String iso2;
-
         @JsonProperty("Iso3")
         private String iso3;
     }

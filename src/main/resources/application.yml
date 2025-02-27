@@ -8,6 +8,7 @@ spring:
 
 development:
   apiKey: "M21wbzZlNHhRYWdDQldERkdRRjVYZktxMGpQMFJLUmRRTm16TXJIRA=="
+  geoApiKey: "6412cb326be7457581eb597fa8393838"
   externalApi:
     ##country
     getCountry: "https://api.countrystatecity.in/v1/countries/"
@@ -16,3 +17,6 @@ development:
     getIsoCodes: "https://countriesnow.space/api/v0.1/countries/iso"
     #city
     getCity: "https://api.countrystatecity.in/v1/countries/{cityId}/cities"
+    #geocode
+    getResults: "https://api.geoapify.com/v1/geocode/search"
+

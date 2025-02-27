@@ -1,9 +1,6 @@
 package com.bubu.travelapp.controller;
 
-import com.bubu.travelapp.model.Country;
-import com.bubu.travelapp.model.CountryDetails;
-import com.bubu.travelapp.model.IsoCode;
-import com.bubu.travelapp.model.RegionsAndProvinces;
+import com.bubu.travelapp.model.*;
 import com.bubu.travelapp.services.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

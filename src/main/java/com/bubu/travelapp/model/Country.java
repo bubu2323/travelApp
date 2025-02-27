@@ -3,18 +3,20 @@ package com.bubu.travelapp.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.experimental.Accessors;
-
+import org.springframework.data.annotation.Id;
 @Data
 @Accessors(chain = true)
-
 public class Country {
-    private int id;
-    private String name;
-    private String country_id;
-    private String country_code;
-    private String iso2;
-    private String type;
-    private String latitude;
-    private String longitude;
+    @Id
+    Integer id;
+    String name;
+    String iso2;
+    String iso3;
+    @JsonProperty(value = "phonecode")
+    String phoneCode;
+    String capital;
+    String currency;
+    @JsonProperty(value = "native")
+    String nativ;
+    String emoji;
 }
-

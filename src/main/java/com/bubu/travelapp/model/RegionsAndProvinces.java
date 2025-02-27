@@ -1,5 +1,6 @@
 package com.bubu.travelapp.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -7,18 +8,13 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class RegionsAndProvinces {
     private  String id;
-
     private String name;
-
-    private  String country_id;
-
-    private  String country_code;
-
+    @JsonProperty(value = "country_id")
+    private  String countryId;
+    @JsonProperty(value = "country_code")
+    private  String countryCode;
     private  String iso2;
-
     private  String type;
-
     private  String latitude;
-
     private  String longitude;
 }
